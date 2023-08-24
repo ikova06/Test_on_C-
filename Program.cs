@@ -33,3 +33,13 @@ void PrintArray(string[] array)
         Console.WriteLine();
     }
 }
+
+void PrintTask(string[] array)
+ {
+    PrintArray(array);
+    string[] shortArray = ShortArray(array);
+    Console.WriteLine($"Новый массив с элементами из {max_word_length} или меньше символов: ");
+    PrintArray(shortArray);
+    Console.WriteLine();
+}
+PrintTask(array);
